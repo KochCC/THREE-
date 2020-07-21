@@ -10,12 +10,35 @@ public class Main {
     long elapsedTime = 0;
     while (elapsedTime < 1000){
       elapsedTime = (new Date()).getTime() - startTime;
-      System.out.println(elapsedTime);
     }
   }
-  static void bridge(String[] answer) {
+  static void bridge(String[] answer) { //4 layers each
     clrscrn();
-    System.out.println(answer[0]+" passed the test");
+    System.out.println("\n\n\n" + answer[0] + "____________________________________");
+    timerz();
+    clrscrn();
+    System.out.println("\n\n   "+ answer[0]+ "\n____________________________________");
+    timerz();
+    clrscrn();
+    System.out.println("\n        " + answer[0] + "\n\n____________________________________");
+    timerz();
+    clrscrn();
+    System.out.println("            "+ answer[0] + "\n\n\n____________________________________");
+    timerz();
+    clrscrn();
+    System.out.println("\n            " + answer[0] + "\n\n____________________________________");
+    timerz();
+    clrscrn();
+    System.out.println("\n\n            "+ answer[0]+ "\n____________________________________");
+    timerz();
+    clrscrn();
+    System.out.println("\n\n\n____________________________________");
+    timerz();
+    clrscrn();
+    System.out.println("           ");
+    System.out.println("           ");
+    System.out.println("           ");
+    System.out.println("_______(poof gurgle gurgle)_________");
   }
   public static void main(String[] args) {
     Scanner inputword = new Scanner(System.in);
@@ -28,10 +51,8 @@ public class Main {
       System.out.println("YOU HAVE OPENED UP THE BRIDGE...I mean...PROGRAM OF DEATH!");
       System.out.println("What is YOUR name?");
       answer[0] = inputword.nextLine();
-      //Do not need to change
       System.out.println("\nWhat is YOUR quest?");
       answer[1] = inputword.nextLine();
-      //Do not need to change
       System.out.println("\nWhat is the capital of Assyria? (You don't need to use the funny symbols over vowels.)");
       answer[2] = inputword.nextLine();
       if ( !"Assur".equals(answer[2]) && !"Shubat-Enlil".equals(answer[2]) && !"Kalhu".equals(answer[2]) && !"Dur-Sharrukin".equals(answer[2]) && !"Nineveh".equals(answer[2]) && !"Harran".equals(answer[2])) {
@@ -68,7 +89,7 @@ public class Main {
       if ( sirrobin == false){
         System.out.println("\nSIR " + answer[0] + "!");
         System.out.println("WHO IS ON A QUEST TO " + answer[1] + "!");
-        System.out.println("May proceed, please enjoy your day.");
+        System.out.println("May proceed, please enjoy your day m'lord.");
       }
       else{
         System.out.println("[Laughs in evil] You are no king, YOU FAIL! GOOD DAY SIR OR MADAM!");
