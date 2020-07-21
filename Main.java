@@ -2,17 +2,18 @@
 import java.util.*;
 public class Main {
 public static void main(String[] args) {
-  Scanner inputword = new Scanner(System.in);
-  boolean userflung = false;
-  boolean sirrobin = true;
-  String lastcall = "John Young";
-  Object[] answer = new Object[5];
-  answer[0] = new String("Connie Booth");
-  answer[1] = new String("Eric Idle");
-  answer[2] = new String("Terry Gilliam");
-  answer[3] = new String("John Cleese");
-  answer[4] = new String("Michael Palin");
+
   while (userflung == false) {
+    Scanner inputword = new Scanner(System.in);
+    boolean userflung = false;
+    boolean sirrobin = true;
+    String lastcall = "John Young";
+   Object[] answer = new Object[5];
+    answer[0] = new String("Connie Booth");
+    answer[1] = new String("Eric Idle");
+    answer[2] = new String("Terry Gilliam");
+    answer[3] = new String("John Cleese");
+    answer[4] = new String("Michael Palin");
     System.out.print("\033[H\033[2J");
     System.out.flush();
     System.out.println("YOU HAVE OPENED UP THE BRIDGE...I mean...PROGRAM OF DEATH!");
@@ -81,6 +82,7 @@ public static void main(String[] args) {
 }
 
 static void fling() {
+  //Use timers inbetween spaces here
   System.out.print("\033[H\033[2J");
   System.out.flush();
   System.out.println("           ");
