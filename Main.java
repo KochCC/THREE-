@@ -5,40 +5,45 @@ public class Main {
     System.out.print("\033[H\033[2J");
     System.out.flush();
   }
-  static void timerz(){
+  static void timerone(){
     long startTime = System.currentTimeMillis();
     long elapsedTime = 0;
     while (elapsedTime < 1000){
       elapsedTime = (new Date()).getTime() - startTime;
     }
   }
+  static void timertwo(){
+    long startTime = System.currentTimeMillis();
+    long elapsedTime = 0;
+    while (elapsedTime < 5000){
+      elapsedTime = (new Date()).getTime() - startTime;
+    }
+  }
+  
   static void bridge(String[] answer) { //4 layers each
     clrscrn();
     System.out.println("\n\n\n" + answer[0] + "____________________________________");
-    timerz();
+    timerone();
     clrscrn();
     System.out.println("\n\n   "+ answer[0]+ "\n____________________________________");
-    timerz();
+    timerone();
     clrscrn();
-    System.out.println("\n        " + answer[0] + "\n\n____________________________________");
-    timerz();
+    System.out.println("\n       " + answer[0] + "\n\n____________________________________");
+    timerone();
     clrscrn();
-    System.out.println("            "+ answer[0] + "\n\n\n____________________________________");
-    timerz();
+    System.out.println("             "+ answer[0] + "\n\n\n____________________________________");
+    timerone();
     clrscrn();
-    System.out.println("\n            " + answer[0] + "\n\n____________________________________");
-    timerz();
+    System.out.println("\n               " + answer[0] + "\n\n____________________________________");
+    timerone();
     clrscrn();
-    System.out.println("\n\n            "+ answer[0]+ "\n____________________________________");
-    timerz();
+    System.out.println("\n\n               "+ answer[0]+ "\n____________________________________");
+    timerone();
     clrscrn();
     System.out.println("\n\n\n____________________________________");
-    timerz();
+    timerone();
     clrscrn();
-    System.out.println("           ");
-    System.out.println("           ");
-    System.out.println("           ");
-    System.out.println("_______(poof gurgle gurgle)_________");
+    System.out.println("\n\n\n_______(poof gurgle gurgle)_________");
   }
   public static void main(String[] args) {
     Scanner inputword = new Scanner(System.in);
@@ -57,6 +62,7 @@ public class Main {
       answer[2] = inputword.nextLine();
       if ( !"Assur".equals(answer[2]) && !"Shubat-Enlil".equals(answer[2]) && !"Kalhu".equals(answer[2]) && !"Dur-Sharrukin".equals(answer[2]) && !"Nineveh".equals(answer[2]) && !"Harran".equals(answer[2])) {
         System.out.println("WRONG!, it is Assur, Shubat-Enlil, Kalhu, Dur-Sharrukin, Nineveh, or Harran (depending on the king and year).");
+        timertwo();
         userflung = true;
       }
       /*https://en.wikipedia.org/wiki/Assyria
@@ -92,7 +98,9 @@ public class Main {
         System.out.println("May proceed, please enjoy your day m'lord.");
       }
       else{
+        timertwo();
         System.out.println("[Laughs in evil] You are no king, YOU FAIL! GOOD DAY SIR OR MADAM!");
+        timertwo();
         bridge(answer);
       }
       userflung = false;
