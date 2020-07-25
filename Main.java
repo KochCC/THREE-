@@ -54,6 +54,20 @@ public class Main {
     while (userflung == false) {
       clrscrn();
       System.out.println("YOU HAVE OPENED UP THE BRIDGE...I mean...PROGRAM OF DEATH!");
+      System.out.println("Now read up, and take notes.  This will be important.");
+      System.out.println("The Assyrian Empire was around for just under two millenia.");
+      System.out.println("In the meantime, they had a few captials listed below:");
+      System.out.println("Assur, Shubat-Enlil, Kalhu, Dur-Sharrukin, Nineveh, and Harran.");
+      System.out.println("Also, the Eurpean swallow can fly at roughly 45 kpm.");
+      System.out.println("Are you ready? (Y/N)");
+      while ( !lastcall.equals("Y") && !lastcall.equals("y")){
+        lastcall = inputword.nextLine();
+        if ( !lastcall.equals("Y") && !lastcall.equals("y")){
+          System.out.println("How about now?");
+        }
+      }
+      lastcall = "afe";
+      clrscrn();
       System.out.println("What is YOUR name?");
       answer[0] = inputword.nextLine();
       System.out.println("\nWhat is YOUR quest?");
